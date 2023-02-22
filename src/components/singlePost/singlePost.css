@@ -1,0 +1,123 @@
+.singlepost {
+    margin: 0;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+    ;
+    grid-template-columns: 0.4fr 1.6fr;
+    grid-template-rows: .4fr 1fr;
+}
+
+.singlePostHeader {
+    max-height: 250px;
+    margin-bottom: 35px;
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.singlepost-wrapper {
+    padding: 20px;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    grid-area: main;
+}
+
+
+
+.overlay-title-wrapper {
+    top: -254px;
+    position: relative;
+    color: white;
+    background: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 250px;
+}
+
+.overlay-title {
+    padding: 80px 150px;
+}
+
+.singlepost-img {
+    max-height: inherit;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.singlepost-title-input {
+    font-size: 20px;
+    border: none;
+    color: grey;
+    border-bottom: 2px solid lightgray;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.singlepost-title-input:focus {
+    outline: none;
+}
+
+.singlepost-title {
+    text-align: right;
+    font-size: 20px;
+}
+
+.singlepost-edit {
+    font-size: 16px;
+    padding-right: 40px;
+}
+
+.singlepost-icon {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.singlepost-info {
+    display: flex;
+    /* justify-content: space-between; */
+    font-size: 16px;
+    border-bottom: 1px solid #000;  
+    padding-bottom: 20px;
+}
+
+.singlepost-author {
+    padding-right: 20px;
+}
+
+.singlepost-desc-input {
+    font-size: 20px;
+    border: none;
+    color: grey;
+    text-align: center;
+}
+
+.singlepost-desc-input:focus {
+    outline: none;
+}
+
+.singlepost-desc {
+    font-size: 16px;
+    line-height: 25px;
+    padding: 20px 20px 0 0 ;
+}
+
+.singlepost-desc::first-letter {
+    margin-left: 20px;
+}
+
+.singlepost-button {
+    border: none;
+    background-color: teal;
+    width: 75px;
+    height: 28px;
+    color: white;
+    border-radius: 5px;
+    align-self: end;
+    margin-top: 20px;
+    cursor: pointer;
+}

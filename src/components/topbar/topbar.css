@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Open+Sans&family=Source+Sans+Pro&display=swap');
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Bitter', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 74px;
+    /* Material/Maha Purple/50 */
+    background: #731B7F;
+}
+
+
+.topLeft,.topRight {
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+.topRight {
+    flex-direction: row-reverse;
+    padding-right: 30px;
+}
+
+
+.topList {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.topListItem {
+    margin: 20px;
+
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.badgeKB {
+    padding-left: 30px;
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+}
+
+.kblogo {
+    margin: 10px;
+}
+.logoName {
+    padding: 20px 0 20px 20px;
+    font-family: 'poppins',sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.searchBar input[type=text]{
+    width:200px;
+    height:27px;
+    border-radius:10px;
+    border: none;
+    padding: 0px 20px 0px 20px;
+}
+
+.searchBar button{
+    background-color: transparent;
+    padding: 5px 10px;
+    margin-right: 16px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
